@@ -13,11 +13,11 @@ public static class Program
             Console.WriteLine(RandomElements(suffixAmount, Elf.ElfNames(1), Elf.ElfNames(2)));
         }
 
-        string RandomElements(int suffix, string[] array, string[] array2)
+        string RandomElements(int suffix, IReadOnlyList<string> array, IReadOnlyList<string> array2)
         {   
-            string startNickname = array[new Random().Next(0, array.Length)];
+            string startNickname = array[new Random().Next(0, array.Count)];
             string endNickname = "";
-            //string endNickname2=array2[new Random().Next(0, array2.Length)];
+            
             string finalNickname = "";
 
             if (suffix == 0)
@@ -26,12 +26,9 @@ public static class Program
                
             for (int i = 0; i < suffix; i++)
             {   
-                endNickname += array2[new Random().Next(0, array2.Length)];
+                endNickname += array2[new Random().Next(0, array2.Count)];
                 finalNickname = startNickname + endNickname;
-                /*if ((i = suffix - 1) != 0 && suffix>=2)
-                finalNickname = startNickname + endNickname +"\'"+endNickname2;
-            else
-                finalNickname = startNickname + endNickname;*/
+                
             }
             return finalNickname;
         }

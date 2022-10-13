@@ -4,7 +4,7 @@ public static class Elf
 {
     public static string[] ElfNames(int choice)
     {
-        if (choice ==1)
+        if (choice == 1)
         {
             string[] prefix = {
                 "Аэль", "Аер", "Бес", "Кор", "Эйль", "Эйр", "Эль"
@@ -13,7 +13,7 @@ public static class Elf
             return prefix;
         }
 
-        if (choice==2)
+        if (choice == 2)
         {
             string[] suffix =
             {
