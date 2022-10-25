@@ -7,7 +7,7 @@ public static class Elf
         if (choice == 1)
         {
             string[] prefix = {
-                "Аэль", "Аер", "Бес", "Кор", "Эйль", "Эйр", "Эль"
+                "Аэль", "Аер", "Бес", "Кор", "Кер", "Эйль", "Эйр", "Эль"
                 
             };
             return prefix;
