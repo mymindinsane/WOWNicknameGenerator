@@ -17,18 +17,15 @@ public static class Program
         {   
             string startNickname = array[new Random().Next(0, array.Count)];
             string endNickname = "";
-            
             string finalNickname = "";
 
             if (suffix == 0)
                 return startNickname;
-                
-               
+                   
             for (int i = 0; i < suffix; i++)
             {   
                 endNickname += array2[new Random().Next(0, array2.Count)];
-                finalNickname = startNickname + endNickname;
-                
+                finalNickname = startNickname + endNickname;    
             }
             return finalNickname;
         }
